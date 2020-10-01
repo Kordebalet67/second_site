@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.top-container {
+    padding-top: 7%;
+}
+
+.general-container {
+    background: url('../media/vovka.jpg');
+    height: 100%;
+}
+
+.general-container form label{
+    color: antiquewhite;
+}
+
+.sql_out {
+    width: 100px;
+    text-align: center;
+    color: azure;
+    font-size: 36px;
+}
+
+.title {
+    color: #8b0000;
+    text-align: left;
+    width: 430px;
+}
+
+.form-control{
+    width: 200px;
+}
+
+.form-group{
+    display: inline-grid;
+    grid-template-columns: 150px 300px;
+    grid-auto-rows: 30px;
+}
+
+.row{
+    display: inline-grid;
+    grid-template-columns: 70% 30%;
+}
