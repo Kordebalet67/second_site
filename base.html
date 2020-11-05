@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock title %}
+
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Login/views.py">
+
+
+</head>
+<body style="background-color: #232222">
+<div class="navbar">{% include 'navbar.html' %}</div>
+<div class="container">
+     <div class="wrapper">
+
+
+            {% block content %}
+            {% endblock content %}
+
+        <form action="../main/mainPage.html">
+            <div>
+                <button type="submit" class="btn6 btn btn-primary">На главную</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="footer">{% include 'footer.html' %}</div>
+</body>
+</html>
